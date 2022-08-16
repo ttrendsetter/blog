@@ -4,4 +4,6 @@
         <h2> {{ Post.title }} </h2>
         <p> {{ Post.body }} </p>
     </div>
+    <p><a href="{% url 'post_edit' Post.pk %}">Edit post</a></p>
+    <p><a href="{% url 'post_delete' Post.pk %}">Delete post</a></p>
 {% endblock content %}
